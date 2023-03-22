@@ -11,3 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background-color: skyblue;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+#box {
+  display: flex;
+}
+
+
+
+.hasChildren::before {
+  content: ' + ';
+  color: #fff;
+  line-height: 20px;
+  position: absolute;
+  right: -8px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  z-index: 30;
+}
+
+.close::before {
+  content: ' - ';
+}
+
+/* .close::after{
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 25px;
+  width: 20px;
+  height: 1px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 10;
+} */
+
+.forWordBackLine {
+  position: absolute;
+  right: -20px;
+  top: 25px;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  width: 20px;
+  z-index: 10;
+}
